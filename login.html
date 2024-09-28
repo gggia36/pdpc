@@ -50,7 +50,7 @@
 
     <!-- content -->
 
-    <section data-aos="fade-up" data-aos-duration="3000">
+    <section data-aos="fade-up" data-aos-duration="1000">
       <div class="container py-5 padding-faq">
         <div class="row">
           <div class="col-12 login">
@@ -62,41 +62,43 @@
             </p>
             <div class="card-login mt-5">
               <h5>ลงชื่อเช้าใช้</h5>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >อีเมล/ชื่อผู้ใช้งาน:</label
-                >
-                <input
-                  type="email"
-                  class="form-control input-login"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"
-                  >รหัสผ่าน:</label
-                >
-                <input
-                  type="password"
-                  class="form-control input-login"
-                  id="exampleFormControlInput1"
-                  placeholder="name@example.com"
-                />
-              </div>
-              <button class="btn btn-info w-100 my-2">เข้าสู่ระบบ</button>
-              <button class="btn btn-outline-primary w-100 my-2">
-                ลงทะเบียน
-              </button>
-              <p class="my-3 text-center txt-or">หรือ</p>
-              <button class="btn btn-blue w-100">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img
-                    class="me-2"
-                    src="asset/image/icon-thaid.svg"
-                  />เข้าสู่ระบบผ่าน ThaiD
+              <form>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >อีเมล/ชื่อผู้ใช้งาน:</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control input-login"
+                    id="exampleFormControlInput1"
+                    placeholder="ตัวอย่างเช่น mail@mail.com"
+                  />
                 </div>
-              </button>
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >รหัสผ่าน:</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control input-login"
+                    id="exampleFormControlInput1"
+                    placeholder="รหัสผ่าน"
+                  />
+                </div>
+                <button class="btn btn-info w-100 my-2">เข้าสู่ระบบ</button>
+                <button class="btn btn-outline-primary w-100 my-2">
+                  ลงทะเบียน
+                </button>
+                <p class="my-3 text-center txt-or">หรือ</p>
+                <button class="btn btn-blue w-100">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      class="me-2"
+                      src="asset/image/icon-thaid.svg"
+                    />เข้าสู่ระบบผ่าน ThaiD
+                  </div>
+                </button>
+              </form>
               <div class="my-4 text-center">
                 <img class="img-logo" src="asset/image/image-logo.png" />
               </div>
@@ -113,23 +115,5 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const deleteIcon = document.getElementById("deleteIcon");
-      const plusIcon = document.getElementById("plusIcon");
-
-      document
-        .getElementById("customCollapse")
-        .addEventListener("show.bs.collapse", function () {
-          deleteIcon.style.display = "inline";
-          plusIcon.style.display = "none";
-        });
-
-      document
-        .getElementById("customCollapse")
-        .addEventListener("hide.bs.collapse", function () {
-          deleteIcon.style.display = "none";
-          plusIcon.style.display = "inline";
-        });
-    </script>
   </body>
 </html>
