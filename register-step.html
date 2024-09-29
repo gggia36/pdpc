@@ -55,179 +55,81 @@
     <!-- content -->
 
     <section data-aos="fade-up" data-aos-duration="1000">
-      <div class="container py-5 padding-faq">
+      <div class="container py-lg-5 py-0 padding-register">
         <div class="row">
           <div class="col-12 login">
-            <h1 class="text-primary text-center">
-              ระบบบริการทางวิชาการและให้คำปรึกษา
-            </h1>
-            <p class="text-gold text-center">
-              เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล
-            </p>
-            <div class="card-register mt-5">
-              <div class="d-flex justify-content-center align-items-start">
+            <div class="d-lg-block d-none">
+              <h1 class="text-primary text-center">
+                ระบบบริการทางวิชาการและให้คำปรึกษา
+              </h1>
+              <p class="text-gold text-center">
+                เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล
+              </p>
+            </div>
+
+            <div class="card-register-step mt-5">
+              <div
+                class="d-lg-flex d-none justify-content-center align-items-start"
+              >
                 <div class="d-flex flex-column align-items-center">
                   <img
                     class="icon-register"
                     src="/asset/image/icon-step-succeed.svg"
                   />
-                  <label class="text-primary mt-2 step-1">ขั้นตอนที่ 1</label>
-                  <h4 class="text-primary step-1-name fw-bold">ข้อมูลผู้ใช้</h4>
+                  <label class="text-dark mt-2 step-1">ขั้นตอนที่ 1</label>
+                  <h4 class="text-dark step-1-name fw-bold">ข้อมูลผู้ใช้</h4>
                 </div>
                 <img
                   class="mx-2"
                   src="/asset/image/icon-underline-succeed.svg"
                 />
                 <div class="d-flex flex-column align-items-center">
-                  <img class="icon-register" src="/asset/image/icon-otp.svg" />
-                  <label class="mt-2 text-grey step-1">ขั้นตอนที่ 2</label>
-                  <h4 class="text-grey step-1-name">ยืนยันรหัส OTP</h4>
+                  <img
+                    class="icon-register"
+                    src="/asset/image/icon-verify.svg"
+                  />
+                  <label class="mt-2 text-primary step-1">ขั้นตอนที่ 2</label>
+                  <h4 class="text-primary step-1-name fw-bold">
+                    ยืนยันรหัส OTP
+                  </h4>
                 </div>
               </div>
 
-              <h5 class="my-5">สมัครสมาชิก</h5>
+              <h5 class="mt-5 mb-3">ยืนยันตัวตนรหัส OTP</h5>
 
-              <form class="row">
-                <div class="mb-3 col-4 px-2">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >คำนำหน้า:<span class="text-danger">*</span></label
-                  >
-                  <select
-                    class="form-select input-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>ชาย</option>
-                    <option value="1">หญิง</option>
-                  </select>
-                </div>
-                <div class="mb-3 col-4 px-2">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >ชื่อ : <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control input-login"
-                    id="exampleFormControlInput1"
-                    placeholder="ตัวอย่าง เช่น ทองดี"
-                  />
-                </div>
-                <div class="mb-3 col-4 px-2">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >นามสกุล : <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control input-login"
-                    id="exampleFormControlInput1"
-                    placeholder="ตัวอย่าง เช่น มึสุข"
-                  />
-                </div>
-                <div class="mb-3 col-4 px-2">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >วันเกิด : <span class="text-danger">*</span></label
-                  >
-                  <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">
-                      <img class="" src="/asset/image/icon-date.svg"
-                    /></span>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Username"
-                      aria-label="Username"
-                      aria-describedby="basic-addon1"
-                    />
-                  </div>
-                </div>
-                <div class="mb-3 col-4 px-2">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >เบอร์โทรศัพท์มือถือ :
-                    <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="text"
-                    class="form-control input-login"
-                    id="exampleFormControlInput1"
-                    placeholder="ตัวเลข 10 หลัก"
-                  />
-                </div>
-                <div class="mb-3 col-4 px-2">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >อีเมล/ชื่อผู้ใช้งาน :
-                    <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="email"
-                    class="form-control input-login"
-                    id="exampleFormControlInput1"
-                    placeholder="ตัวเลข 10 หลัก"
-                  />
-                </div>
-                <div class="mb-3 col-6 px-2">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >เลขบัตรประจำตัวประชาชน 13 หลัก :
-                    <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="email"
-                    class="form-control input-login"
-                    id="exampleFormControlInput1"
-                    placeholder="_-____-_____-__-_"
-                  />
-                </div>
-                <div class="mb-3 col-6 px-2">
-                  <label for="exampleFormControlInput1" class="form-label"
-                    >เลขหลังบัตรประจำตัวประชาชน 12 หลัก :
-                    <span class="text-danger">*</span></label
-                  >
-                  <input
-                    type="email"
-                    class="form-control input-login"
-                    id="exampleFormControlInput1"
-                    placeholder="___-_______-__"
-                  />
-                </div>
-                <div class="mb-3 col-6 px-2 position-relative">
-                  <label for="passwordInput" class="form-label"
-                    >รหัสผ่าน :</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control input-login"
-                    id="passwordInput"
-                    placeholder="********"
-                  />
-                  <!-- Eye Icon -->
-                  <i
-                    class="bi bi-eye-slash icon-eye-password"
-                    id="togglePassword"
-                  ></i>
-                </div>
+              <div class="noti-card-register">
+                กรุณากด
+                <span class="fw-bold">ส่งรหัสยืนยันรหัส OTP </span> เพื่อส่งรหัส
+                OTP ไปยังอีเมล<span class="fw-bold"> pdpcxxxx@gmail.com</span>
+                ของท่าน กรุณาตรวจสอบอีมลเเละกรอกรหัสเพื่อยืนยันตัวตน
+              </div>
 
-                <div class="mb-3 col-6 px-2 position-relative">
-                  <label for="confirmPasswordInput" class="form-label"
-                    >ยืนยันรหัส :</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control input-login"
-                    id="confirmPasswordInput"
-                    placeholder="********"
-                  />
-                  <!-- Eye Icon -->
-                  <i
-                    class="bi bi-eye-slash icon-eye-password"
-                    id="toggleConfirmPassword"
-                  ></i>
+              <div class="my-3 col-12 px-2">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >รหัส OTP : <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control input-login"
+                  id="exampleFormControlInput1"
+                  placeholder="รหัส OTP 6 หลัก"
+                />
+              </div>
+              <div class="text-center mb-5 mt-3 txt-otp">
+                <p class="mb-2">ส่งรหัสยืนยัน OTP</p>
+                <label
+                  >หากไม่ได้รับรหัสยืนยัน OTP กรุณารอหมดเวลาเเล้วกดขอรหัสใหม่
+                </label>
+              </div>
+              <div class="col-12 text-center">
+                <button class="btn btn-info w-100 mb-4">ยืนยัน</button>
+                <a href="/register.html" class="text-primary fw-bold"
+                  >ย้อนกลับ</a
+                >
+                <div class="my-4 text-center">
+                  <img class="img-logo" src="asset/image/image-logo.png" />
                 </div>
-
-                <div class="col-12">
-                  <button class="btn btn-info w-100 my-2">ขั้นตอนถัดไป</button>
-                  <div class="my-4 text-center">
-                    <img class="img-logo" src="asset/image/image-logo.png" />
-                  </div>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>

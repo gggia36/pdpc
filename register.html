@@ -55,17 +55,21 @@
     <!-- content -->
 
     <section data-aos="fade-up" data-aos-duration="1000">
-      <div class="container py-5 padding-faq">
+      <div class="container py-lg-5 py-0 padding-register">
         <div class="row">
-          <div class="col-12 login">
-            <h1 class="text-primary text-center">
-              ระบบบริการทางวิชาการและให้คำปรึกษา
-            </h1>
-            <p class="text-gold text-center">
-              เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล
-            </p>
-            <div class="card-register mt-5">
-              <div class="d-flex justify-content-center align-items-start">
+          <div class="col-12 login px-0 px-lg-3">
+            <div class="d-lg-block d-none">
+              <h1 class="text-primary text-center">
+                ระบบบริการทางวิชาการและให้คำปรึกษา
+              </h1>
+              <p class="text-gold text-center">
+                เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล
+              </p>
+            </div>
+            <div class="card-register mt-lg-5 mt-0">
+              <div
+                class="d-lg-flex d-none justify-content-center align-items-start"
+              >
                 <div class="d-flex flex-column align-items-center">
                   <img
                     class="icon-register"
@@ -85,7 +89,7 @@
               <h5 class="my-5">สมัครสมาชิก</h5>
 
               <form class="row">
-                <div class="mb-3 col-4 px-2">
+                <div class="mb-3 col-lg-4 col-12 px-2">
                   <label for="exampleInputEmail1" class="form-label"
                     >คำนำหน้า:<span class="text-danger">*</span></label
                   >
@@ -97,7 +101,7 @@
                     <option value="1">หญิง</option>
                   </select>
                 </div>
-                <div class="mb-3 col-4 px-2">
+                <div class="mb-3 col-6 col-lg-4 px-2">
                   <label for="exampleFormControlInput1" class="form-label"
                     >ชื่อ : <span class="text-danger">*</span></label
                   >
@@ -108,7 +112,7 @@
                     placeholder="ตัวอย่าง เช่น ทองดี"
                   />
                 </div>
-                <div class="mb-3 col-4 px-2">
+                <div class="mb-3 col-6 col-lg-4 px-2">
                   <label for="exampleFormControlInput1" class="form-label"
                     >นามสกุล : <span class="text-danger">*</span></label
                   >
@@ -119,7 +123,7 @@
                     placeholder="ตัวอย่าง เช่น มึสุข"
                   />
                 </div>
-                <div class="mb-3 col-4 px-2">
+                <div class="mb-3 col-lg-4 col-12 px-2">
                   <label for="exampleFormControlInput1" class="form-label"
                     >วันเกิด : <span class="text-danger">*</span></label
                   >
@@ -136,7 +140,7 @@
                     />
                   </div>
                 </div>
-                <div class="mb-3 col-4 px-2">
+                <div class="mb-3 col-lg-4 col-12 px-2">
                   <label for="exampleFormControlInput1" class="form-label"
                     >เบอร์โทรศัพท์มือถือ :
                     <span class="text-danger">*</span></label
@@ -148,7 +152,7 @@
                     placeholder="ตัวเลข 10 หลัก"
                   />
                 </div>
-                <div class="mb-3 col-4 px-2">
+                <div class="mb-3 col-lg-4 col-12 px-2">
                   <label for="exampleFormControlInput1" class="form-label"
                     >อีเมล/ชื่อผู้ใช้งาน :
                     <span class="text-danger">*</span></label
@@ -160,7 +164,7 @@
                     placeholder="ตัวเลข 10 หลัก"
                   />
                 </div>
-                <div class="mb-3 col-6 px-2">
+                <div class="mb-3 col-lg-6 col-12 px-2">
                   <label for="exampleFormControlInput1" class="form-label"
                     >เลขบัตรประจำตัวประชาชน 13 หลัก :
                     <span class="text-danger">*</span></label
@@ -172,7 +176,7 @@
                     placeholder="_-____-_____-__-_"
                   />
                 </div>
-                <div class="mb-3 col-6 px-2">
+                <div class="mb-3 col-lg-6 col-12 px-2">
                   <label for="exampleFormControlInput1" class="form-label"
                     >เลขหลังบัตรประจำตัวประชาชน 12 หลัก :
                     <span class="text-danger">*</span></label
@@ -184,7 +188,7 @@
                     placeholder="___-_______-__"
                   />
                 </div>
-                <div class="mb-3 col-6 px-2 position-relative">
+                <div class="mb-3 col-lg-6 col-12 px-2 position-relative">
                   <label for="passwordInput" class="form-label"
                     >รหัสผ่าน :</label
                   >
@@ -201,7 +205,7 @@
                   ></i>
                 </div>
 
-                <div class="mb-3 col-6 px-2 position-relative">
+                <div class="mb-3 col-lg-6 col-12 px-2 position-relative">
                   <label for="confirmPasswordInput" class="form-label"
                     >ยืนยันรหัส :</label
                   >
@@ -219,7 +223,11 @@
                 </div>
 
                 <div class="col-12">
-                  <button class="btn btn-info w-100 my-2">ขั้นตอนถัดไป</button>
+                  <a href="/register-step.html">
+                    <button class="btn btn-info w-100 my-2">
+                      ขั้นตอนถัดไป
+                    </button>
+                  </a>
                   <div class="my-4 text-center">
                     <img class="img-logo" src="asset/image/image-logo.png" />
                   </div>
