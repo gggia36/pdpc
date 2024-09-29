@@ -8,6 +8,10 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="asset/css/custom.css" />
     <title>PDPC</title>
@@ -676,8 +680,12 @@
 
     <!-- offcanvas mobile end -->
 
-    <button type="button" class="btn gtt-btn btn-floating btn-lg" id="btn-back-to-top"></button>
-      <img src="asset/image/icon/up-chevron.png" class="mw-100" alt="Go to up" title="Go to up">
+    <button
+      type="button"
+      class="btn gtt-btn btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-chevron-double-up"></i>
     </button>
 
     <script
@@ -732,29 +740,29 @@
         });
       });
 
-          //GotoTop
-          let mybutton = document.getElementById("btn-back-to-top");
-          window.onscroll = function () {
-            scrollFunction();
-          };
+      //GotoTop
+      let mybutton = document.getElementById("btn-back-to-top");
+      window.onscroll = function () {
+        scrollFunction();
+      };
 
-          function scrollFunction() {
-            if (
-              document.body.scrollTop > 20 ||
-              document.documentElement.scrollTop > 20
-            ) {
-              mybutton.classList.add("gototop-show");
-            } else {
-              mybutton.classList.remove("gototop-show");
-            }
-          }
-          mybutton.addEventListener("click", backToTop);
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.classList.add("gototop-show");
+        } else {
+          mybutton.classList.remove("gototop-show");
+        }
+      }
+      mybutton.addEventListener("click", backToTop);
 
-          function backToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-          }
-        // END GotoTop
+      function backToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      // END GotoTop
     </script>
   </body>
 </html>
