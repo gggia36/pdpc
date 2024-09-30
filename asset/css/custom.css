@@ -76,6 +76,9 @@ li {
 .radius-14 {
   border-radius: 14px;
 }
+.radius-16 {
+  border-radius: 16px;
+}
 .fw-bold {
   font-weight: 700;
   font-family: "sukhumvit_setbold";
@@ -126,11 +129,15 @@ li {
   width: 79.68px;
   height: 45.47px;
 }
+.img-logo-nav {
+  width: 140px;
+  height: 80px;
+}
 .btn-primary {
   font-family: "sukhumvit_setbold";
   width: 170px;
   height: 45px;
-  padding: 10px 20px 10px 24px;
+  padding: 10px 18px 10px 24px;
   border-radius: 12px !important;
   border: none !important;
   background: linear-gradient(180deg, #1459b2 0%, #0c4da1 100%);
@@ -694,7 +701,62 @@ input[type="radio"]:checked + label span {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px !important;
 }
+.absolute-bn-new {
+  position: absolute;
+  top: 40%;
+  right: 2%;
+  font-size: 16px;
+  font-weight: 700;
+}
+.absolute-bn-new h5 {
+  font-size: 16px;
+  color: #2d3c68;
+}
+.sb-nav-fixed {
+  width: 225px;
+  height: 100vh !important;
+  z-index: 1038;
+  background-color: #fff;
+}
+.sb-sidenav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+}
 
+.nav-list {
+  padding: 10px 10px;
+  font-size: 16px;
+  display: flex;
+}
+
+.layout_content {
+  padding-left: 250px;
+  top: 25px;
+  padding-right: 20px;
+  position: relative;
+  min-width: 0;
+  flex-grow: 1;
+  min-height: calc(100vh - 56px);
+}
+.padding-nav-admin {
+  padding: 20px 20px 20px 240px;
+}
+.text-nav-profile small {
+  font-family: "sukhumvit_settext";
+  font-size: 12px;
+  font-weight: 500;
+  color: #a6a6a6;
+}
+.text-nav-profile p {
+  font-family: "sukhumvit_setsemi_bold";
+  font-size: 16px;
+  font-weight: 700;
+  color: #2d3c68;
+}
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -757,7 +819,7 @@ input[type="radio"]:checked + label span {
 
   .text--left {
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 16px;
   }
   .card-register {
     width: 100%;
@@ -773,5 +835,22 @@ input[type="radio"]:checked + label span {
   }
   .background-faq h1 {
     font-size: 24px;
+  }
+  .radius-16 {
+    border-radius: 6px;
+  }
+  .absolute-bn-new h5 {
+    font-size: 6px;
+    color: #2d3c68;
+  }
+  .box .txt-section {
+    font-size: 18px !important;
+  }
+  .new-detail h4 {
+    font-family: "sukhumvit_setsemi_bold";
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d3c68;
+    line-height: 24px;
   }
 }
