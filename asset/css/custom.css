@@ -438,7 +438,6 @@ input[type="radio"]:checked + label span {
   font-size: 16px;
   line-height: 25.39px;
   color: #808080;
-  font-weight: 400;
 }
 .card-small > .box-content h5 {
   color: #333333;
