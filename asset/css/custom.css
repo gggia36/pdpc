@@ -938,7 +938,6 @@ input[type="radio"]:checked + label span {
 }
 .border-x {
   border-left: 1px solid #d9d9d9 !important;
-  border-right: 1px solid #d9d9d9 !important;
 }
 
 .input-group label:last-child {
@@ -1153,5 +1152,38 @@ ul.status li.succeed label {
     font-weight: 700;
     color: #2d3c68;
     line-height: 24px;
+  }
+  .sb-sidenav {
+    display: none;
+  }
+  .padding-nav-admin {
+    padding: 5px;
+  }
+  .layout_content {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: auto;
+  }
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .w-75-sm {
+    width: 75% !important;
+  }
+  .w-25-sm {
+    width: 50% !important;
+  }
+  .w-20 {
+    width: 100% !important;
+  }
+  .w-80 {
+    width: 100% !important;
+  }
+  .border-left {
+    border-left: none;
   }
 }
