@@ -33,12 +33,14 @@
           >
             <img src="/asset/image/icon-menu.svg" />
           </button>
-          <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+          <a href="/index.html" class="navbar-brand mx-auto mx-3">
             <img class="img-logo" src="/asset/image/image-logo.png" />
           </a>
-          <button class="btn btn-link">
-            <img src="/asset/image/icon-profile.svg" />
-          </button>
+          <a href="/admin/profile.html">
+            <button class="btn btn-link">
+              <img src="/asset/image/icon-profile.svg" />
+            </button>
+          </a>
         </div>
         <div class="d-none d-lg-block">
           <p class="txt-nav-p mb-0">ระบบบริการทางวิชาการและให้คำปรึกษา</p>
@@ -46,28 +48,38 @@
             >เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล</small
           >
         </div>
-        <div class="d-lg-flex d-none gap-4">
+        <div class="d-lg-flex d-none gap-4 align-items-center">
           <div class="text-nav-profile text-end">
             <small>ยินดีตอนรับ!</small>
-            <p class="mb-0">นายทองดี มีสุข</p>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
           </div>
-          <img src="/asset/image/icon-profile.svg" />
-          <img src="/asset/image/icon-logout.svg" />
+          <a href="/admin/profile.html">
+            <img src="/asset/image/icon-profile.svg" />
+          </a>
+          <a href="/login.html">
+            <img src="/asset/image/icon-logout.svg" />
+          </a>
         </div>
       </nav>
     </header>
-    <nav class="sb-nav-fixed sb-sidenav p-3">
+    <nav class="sb-nav-fixed sb-sidenav">
       <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
         <img class="img-logo-nav" src="/asset/image/image-logo.png" />
       </a>
       <div class="sb-sidenav-menu mt-4">
         <div class="nav-list">
-          <img src="/asset/image/icon-follow.svg" class="me-2" />
-          ติดตามการร้องเรียน
+          <a class="text-dark cursor-pointer" href="/admin/follow-up.html">
+            <img src="/asset/image/icon-follow.svg" class="me-2" />
+            ติดตามการร้องเรียน
+          </a>
         </div>
         <div class="nav-list">
-          <img src="/asset/image/icon-history.svg" class="me-2" />
-          ประวัติหารือ
+          <a href="/" class="text-dark cursor-pointer">
+            <img src="/asset/image/icon-history.svg" class="me-2" />
+            ประวัติหารือ
+          </a>
         </div>
       </div>
     </nav>
@@ -109,12 +121,24 @@
           </li>
         </ul>
       </div>
-      <div class="card-admin d-flex justify-content-between d-lg-none mb-4">
+      <div
+        class="card-admin d-flex justify-content-between d-lg-none py-2 mb-4"
+      >
         <div>
-          <h5 class="my-3">เจ้าหน้าที่รับเรื่อง</h5>
-          <label>ขั้นตอนที่ 5</label>
+          <h5 class="mt-3">เจ้าหน้าที่รับเรื่อง</h5>
+          <label>ขั้นตอนที่ 4</label>
         </div>
-        <div></div>
+        <div class="">
+          <div
+            role="progressbar"
+            aria-valuenow="100"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="--value: 100"
+          >
+            <span>4/4</span>
+          </div>
+        </div>
       </div>
 
       <div class="card-admin max-w mb-4">
@@ -176,7 +200,7 @@
           เพื่อให้การระบบหารือถูกพัฒนาไปในทิศทางที่ดีขึ้น
           โปรดให้คะแนนความพึงพอใจของท่าน
         </label>
-        <div class="d-flex flex-row gap-5 justify-content-center my-lg-5 my-0">
+        <div class="d-flex flex-row gap-4 justify-content-center my-lg-5 my-0">
           <div class="text-center d-grid">
             <img src="/asset/image/icon-least.svg" />
             <label>น้อยที่สุด</label>
@@ -224,14 +248,30 @@
               <img class="img-logo-nav" src="/asset/image/image-logo.png" />
             </a>
           </div>
+          <div class="text-nav-profile detail-lock my-4">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
           <div class="sb-sidenav-menu mt-4">
             <div class="nav-list">
-              <img src="/asset/image/icon-follow.svg" class="me-2" />
-              ติดตามการร้องเรียน
+              <a href="/admin/follow-up.html" class="text-dark">
+                <img src="/asset/image/icon-follow.svg" class="me-2" />
+                ติดตามการร้องเรียน
+              </a>
             </div>
             <div class="nav-list">
-              <img src="/asset/image/icon-history.svg" class="me-2" />
-              ประวัติหารือ
+              <a href="/" class="text-dark">
+                <img src="/asset/image/icon-history.svg" class="me-2" />
+                ประวัติหารือ
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/login.html" class="text-dark">
+                <img src="/asset/image/icon-logout-dark.svg" class="me-2" />
+                ออกจากระบบ
+              </a>
             </div>
           </div>
         </div>

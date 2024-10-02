@@ -33,12 +33,14 @@
           >
             <img src="/asset/image/icon-menu.svg" />
           </button>
-          <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+          <a href="/index.html" class="navbar-brand mx-auto mx-3">
             <img class="img-logo" src="/asset/image/image-logo.png" />
           </a>
-          <button class="btn btn-link">
-            <img src="/asset/image/icon-profile.svg" />
-          </button>
+          <a href="/admin/profile.html">
+            <button class="btn btn-link">
+              <img src="/asset/image/icon-profile.svg" />
+            </button>
+          </a>
         </div>
         <div class="d-none d-lg-block">
           <p class="txt-nav-p mb-0">ระบบบริการทางวิชาการและให้คำปรึกษา</p>
@@ -46,28 +48,38 @@
             >เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล</small
           >
         </div>
-        <div class="d-lg-flex d-none gap-4">
+        <div class="d-lg-flex d-none gap-4 align-items-center">
           <div class="text-nav-profile text-end">
             <small>ยินดีตอนรับ!</small>
-            <p class="mb-0">นายทองดี มีสุข</p>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
           </div>
-          <img src="/asset/image/icon-profile.svg" />
-          <img src="/asset/image/icon-logout.svg" />
+          <a href="/admin/profile.html">
+            <img src="/asset/image/icon-profile.svg" />
+          </a>
+          <a href="/login.html">
+            <img src="/asset/image/icon-logout.svg" />
+          </a>
         </div>
       </nav>
     </header>
-    <nav class="sb-nav-fixed sb-sidenav p-3">
+    <nav class="sb-nav-fixed sb-sidenav">
       <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
         <img class="img-logo-nav" src="/asset/image/image-logo.png" />
       </a>
       <div class="sb-sidenav-menu mt-4">
         <div class="nav-list">
-          <img src="/asset/image/icon-follow.svg" class="me-2" />
-          ติดตามการร้องเรียน
+          <a class="text-dark cursor-pointer" href="/admin/follow-up.html">
+            <img src="/asset/image/icon-follow.svg" class="me-2" />
+            ติดตามการร้องเรียน
+          </a>
         </div>
         <div class="nav-list">
-          <img src="/asset/image/icon-history.svg" class="me-2" />
-          ประวัติหารือ
+          <a href="/" class="text-dark cursor-pointer">
+            <img src="/asset/image/icon-history.svg" class="me-2" />
+            ประวัติหารือ
+          </a>
         </div>
       </div>
     </nav>
@@ -309,7 +321,7 @@
       <div class="card-admin container-fluid mb-4">
         <div class="row">
           <div class="col-12">
-            <h5 class="mb-5">
+            <h5 class="mb-lg-5 mb-4">
               <img src="/asset/image/icon-email.svg" class="me-3" />ข้อมูลติดต่อ
             </h5>
           </div>
@@ -353,7 +365,7 @@
       <div class="card-admin container-fluid mb-4">
         <div class="row">
           <div class="col-12">
-            <h5 class="mb-5">
+            <h5 class="mb-lg-5 mb-4">
               <img
                 src="/asset/image/icon-email.svg"
                 class="me-3"
@@ -404,8 +416,8 @@
           </div>
         </form>
       </div>
-      <div class="text-end px-3 px-lg-0">
-        <button class="btn btn-blue px-5">บันทึก</button>
+      <div class="text-end px-2 px-lg-0">
+        <button class="btn btn-blue px-5 mb-3 w-100-sm">บันทึก</button>
       </div>
     </div>
 
@@ -422,7 +434,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-body py-5 px-4">
+          <div class="modal-body pt-5 px-4">
             <div class="set-up">
               <h5>ตั้งรหัสผ่านใหม่</h5>
               <p>
@@ -471,7 +483,7 @@
                   และไม่ควรใช้รหัสผ่านเดียวกันกับบริการอื่นๆ
                 </p>
               </div>
-              <div class="row gap-3 px-2 mt-5">
+              <div class="row gap-3 px-2 mt-4">
                 <button
                   type="button"
                   data-bs-dismiss="modal"
@@ -513,8 +525,7 @@
               <p>
                 คุณต้องการเปลี่ยนรหัสผ่านจริงหรือไม่? กรุณายืนยันการดำเนินการ
               </p>
-              <hr class="my-4" />
-              <div class="row px-3 gap-3">
+              <div class="row px-3 mt-5 gap-3">
                 <button
                   data-bs-dismiss="modal"
                   type="button"
@@ -559,14 +570,30 @@
               <img class="img-logo-nav" src="/asset/image/image-logo.png" />
             </a>
           </div>
+          <div class="text-nav-profile detail-lock my-4">
+            <small>ยินดีตอนรับ!</small>
+            <a href="/admin/profile.html">
+              <p class="mb-0">นายทองดี มีสุข</p>
+            </a>
+          </div>
           <div class="sb-sidenav-menu mt-4">
             <div class="nav-list">
-              <img src="/asset/image/icon-follow.svg" class="me-2" />
-              ติดตามการร้องเรียน
+              <a href="/admin/follow-up.html" class="text-dark">
+                <img src="/asset/image/icon-follow.svg" class="me-2" />
+                ติดตามการร้องเรียน
+              </a>
             </div>
             <div class="nav-list">
-              <img src="/asset/image/icon-history.svg" class="me-2" />
-              ประวัติหารือ
+              <a href="/" class="text-dark">
+                <img src="/asset/image/icon-history.svg" class="me-2" />
+                ประวัติหารือ
+              </a>
+            </div>
+            <div class="nav-list">
+              <a href="/login.html" class="text-dark">
+                <img src="/asset/image/icon-logout-dark.svg" class="me-2" />
+                ออกจากระบบ
+              </a>
             </div>
           </div>
         </div>
