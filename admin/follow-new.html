@@ -22,13 +22,31 @@
     <!-- navber -->
     <header class="fixed-top-nav-admin">
       <nav class="navbar nav-fix py-2 padding-nav-admin">
-        <div>
+        <div class="d-flex w-100 d-lg-none justify-content-between">
+          <button
+            type="button"
+            class="btn btn-link"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+          >
+            <img src="/asset/image/icon-menu.svg" />
+          </button>
+          <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+            <img class="img-logo" src="/asset/image/image-logo.png" />
+          </a>
+          <button class="btn btn-link">
+            <img src="/asset/image/icon-profile.svg" />
+          </button>
+        </div>
+        <div class="d-none d-lg-block">
           <p class="txt-nav-p mb-0">ระบบบริการทางวิชาการและให้คำปรึกษา</p>
           <small class="txt-nav-small"
             >เกี่ยวกับการคุ้มครองข้อมูลส่วนบุคคล</small
           >
         </div>
-        <div class="d-flex gap-4">
+        <div class="d-lg-flex d-none gap-4">
           <div class="text-nav-profile text-end">
             <small>ยินดีตอนรับ!</small>
             <p class="mb-0">นายทองดี มีสุข</p>
@@ -53,7 +71,6 @@
         </div>
       </div>
     </nav>
-
     <!-- navber end -->
 
     <div class="layout_content">
@@ -98,7 +115,7 @@
       <div class="card-admin max-w mb-4">
         <div class="row">
           <div class="col-12">
-            <h5 class="mb-5">
+            <h5 class="mb-lg-5 mb-4">
               <img
                 src="/asset/image/icon-doc.svg"
                 class="me-3"
@@ -170,7 +187,7 @@
       <div class="card-admin max-w mb-4">
         <div class="row">
           <div class="col-12">
-            <h5 class="mb-5">
+            <h5 class="mb-lg-5 mb-4">
               <img
                 src="/asset/image/icon-file.svg"
                 class="me-3"
@@ -182,55 +199,94 @@
               เพียงพอที่จะพิจารณาได้
             </p>
           </div>
-          <div class="style-dashed d-flex justify-content-center mb-3">
-            <div class="text-center">
-              <img src="/asset/image/download-file-1.svg" class="mb-3" />
-              <h5>แนบไฟล์เอกสารหลักฐาน</h5>
-              <p>
-                * เอกสารแนบต้องเป็น .jpg หรือ .pdf
-                เท่านั้นและขนาดไฟล์ต้องไม่เกิน 1 MB
-              </p>
-            </div>
-          </div>
-          <div
-            class="d-flex p-3 bg-grey radius-14 justify-content-between align-items-center mb-3"
-          >
-            <div class="d-flex">
-              <img class="" src="/asset/image/icon-pdf.svg" />
-              <div class="ms-3">
-                <p class="mb-1">
-                  ขอหารือการจัดเก็บภาษีที่ดินและสิ่งปลูกสร้าง.pdf
+          <div class="col-12">
+            <div class="style-dashed d-flex justify-content-center mb-3">
+              <div class="text-center">
+                <img src="/asset/image/download-file-1.svg" class="mb-3" />
+                <h5>แนบไฟล์เอกสารหลักฐาน</h5>
+                <p>
+                  * เอกสารแนบต้องเป็น .jpg หรือ .pdf
+                  เท่านั้นและขนาดไฟล์ต้องไม่เกิน 1 MB
                 </p>
-                <small>1.25MB</small>
               </div>
             </div>
-            <div>
-              <img src="/asset/image/icon-bin.svg" />
-            </div>
-          </div>
-          <div
-            class="d-flex p-3 bg-grey radius-14 justify-content-between align-items-center mb-3"
-          >
-            <div class="d-flex">
-              <img class="" src="/asset/image/icon-xlsx.svg" />
-              <div class="ms-3">
-                <p class="mb-1">ProjectPlan_PDPA_SystemDev.xlsx</p>
-                <small>4.85MB</small>
+            <div
+              class="d-flex p-3 bg-grey radius-14 justify-content-between align-items-center mb-3"
+            >
+              <div class="d-flex">
+                <img class="" src="/asset/image/icon-pdf.svg" />
+                <div class="ms-3">
+                  <p class="mb-1">
+                    ขอหารือการจัดเก็บภาษีที่ดินและสิ่งปลูกสร้าง.pdf
+                  </p>
+                  <small>1.25MB</small>
+                </div>
+              </div>
+              <div>
+                <img src="/asset/image/icon-bin.svg" />
               </div>
             </div>
-            <div>
-              <img src="/asset/image/icon-bin.svg" />
+            <div
+              class="d-flex p-3 bg-grey radius-14 justify-content-between align-items-center mb-3"
+            >
+              <div class="d-flex">
+                <img class="" src="/asset/image/icon-xlsx.svg" />
+                <div class="ms-3">
+                  <p class="mb-1">ProjectPlan_PDPA_SystemDev.xlsx</p>
+                  <small>4.85MB</small>
+                </div>
+              </div>
+              <div>
+                <img src="/asset/image/icon-bin.svg" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="text-end max-w">
+      <div class="text-end max-w px-3 px-lg-0">
         <a href="/admin/follow-detail.html" class="me-4 text-primary fw-bold"
           >ย้อนกลับ</a
         >
         <a href="/admin/follow-check.html">
           <button class="btn btn-blue px-5">ดำเนินการต่อ</button>
         </a>
+      </div>
+    </div>
+
+    <!-- offcanvas menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header justify-content-end p-4">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <div class="text-center">
+            <a href="/index.html" class="navbar-brand mx-auto my-2 mx-3">
+              <img class="img-logo-nav" src="/asset/image/image-logo.png" />
+            </a>
+          </div>
+          <div class="sb-sidenav-menu mt-4">
+            <div class="nav-list">
+              <img src="/asset/image/icon-follow.svg" class="me-2" />
+              ติดตามการร้องเรียน
+            </div>
+            <div class="nav-list">
+              <img src="/asset/image/icon-history.svg" class="me-2" />
+              ประวัติหารือ
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 

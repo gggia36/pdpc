@@ -1057,6 +1057,9 @@ ul.status li.succeed label {
   padding: 24px;
   border-radius: 12px;
 }
+.progress-bar {
+  background-color: #2e3b73;
+}
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -1160,16 +1163,19 @@ ul.status li.succeed label {
     padding: 5px;
   }
   .layout_content {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
     height: auto;
+    top: 70px !important;
+  }
+  .card-admin {
+    border-radius: 0px;
+    padding: 25px 15px;
   }
   .profile-pic {
     width: 150px;
     height: 150px;
-  }
-  .input-group {
-    flex-direction: column;
   }
   .w-75-sm {
     width: 75% !important;
@@ -1185,5 +1191,16 @@ ul.status li.succeed label {
   }
   .border-left {
     border-left: none;
+  }
+  .card-admin h5 {
+    font-size: 16px;
+  }
+  .txt-1 {
+    font-size: 24px !important;
+    color: #333333;
+  }
+  .txt-2 {
+    font-size: 16px !important;
+    color: #808080;
   }
 }
